@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codveda Campaign Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Campaign & Product Launch Tracker</h1>
+    <form id="campaign-form" class="card">
+      <input id="title" type="text" placeholder="Campaign title" required />
+      <input id="channel" type="text" placeholder="Channel (e.g. LinkedIn, Email)" required />
+      <select id="status">
+        <option value="planned">planned</option>
+        <option value="active">active</option>
+        <option value="completed">completed</option>
+      </select>
+      <button type="submit">Add Campaign</button>
+    </form>
+    <p id="feedback" class="feedback"></p>
+    <ul id="campaign-list" class="list"></ul>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
